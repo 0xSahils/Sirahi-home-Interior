@@ -6,7 +6,7 @@ Preloader:
 
 $(window).on('load', function () {
     $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
+    $('#preloader').delay(100).fadeOut('slow');
 });
 
 
@@ -145,3 +145,4 @@ $(window).on('load', function() {
     $("#home-paragraph").addClass("animated zoomIn");
     $("#home-button").addClass("animated zoomIn");
 });
+setTimeout(function(){ $('#preloader').fadeOut('slow'); }, 3000);

@@ -55,7 +55,7 @@ Preloader:
 ====================================================*/
 
 #preloader {
-    background-color: white;
+    background-color: #1a1a1a;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -63,18 +63,44 @@ Preloader:
     right: 0;
     z-index: 9999;
 }
-
 #status {
-    background-image: url("../img/preloader/preloader_blue.gif");
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -35px;
-    margin-left: -35px;
+    margin-top: -30px;
+    margin-left: -30px;
+    border: 4px solid rgba(196, 154, 69, 0.1);
+    border-top: 4px solid #c49a45;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Floating Social Icons */
+.float-social {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 25px;
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 28px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.float-social:hover { color: #fff; transform: scale(1.1); box-shadow: 2px 2px 15px rgba(0,0,0,0.8); }
+.float-wa { right: 25px; background-color: #25d366; }
+.float-ig { right: 90px; background-color: #E1306C; }
+
 
 
 /* ==================================================
