@@ -1,0 +1,252 @@
+{
+  "general": {
+    "companyName": "Sirahi Infrastructure & Interior Design",
+    "logo": "/img/WeDesign-light.png"
+  },
+  "contact": {
+    "address": "E-243A, A-8 Ground Floor, Abul Fazal Enclave-2, Shaheen Bagh, Okhla, New Delhi-110025",
+    "phone1": "+91 9650598785",
+    "phone2": "+91 9899759470",
+    "email": "sirahiinfrainteriordesign@gmail.com",
+    "gstin": "07DCYPA1228R1ZZ",
+    "md": "MD ZAWED ANSARI"
+  },
+  "hero": {
+    "background": "/img/generated/hero_bg_sharp.png",
+    "heading1": "Sirahi Infrastructure",
+    "heading2": "& Interior Design",
+    "subheading": "Premium Construction & Interior Works in India",
+    "buttonText": "Start Your Project"
+  },
+  "about": {
+    "heading": "Our Story",
+    "text1": "Sirahi Infrastructure & Interior Design is dedicated to transforming spaces in India with unparalleled craftsmanship and precision.",
+    "text2": "We specialize in Modular Kitchens, Wardrobes, False Ceiling, Lighting Solutions, Plumbing, Residential & Commercial Interiors, catering to high-end bespoke lifestyle requirements.",
+    "features": [
+      {
+        "icon": "fa-globe",
+        "title": "Nation-wide Impact",
+        "desc": "Delivering premium residential and commercial interiors globally and across India with bespoke requirements."
+      },
+      {
+        "icon": "fa-eye",
+        "title": "Innovative Solutions",
+        "desc": "Creating elegant Indian aesthetics in lighting solutions and false ceilings that redefine your everyday environment."
+      },
+      {
+        "icon": "fa-handshake-o",
+        "title": "Trusted Infrastructure",
+        "desc": "Reliable commercial plumbing and foundational construction services for every complex architectural need."
+      }
+    ],
+    "image": "/img/generated/delhi_featured_wall.png"
+  },
+  "statement": {
+    "quote": "Building excellence across India, from the foundation to the ceiling.",
+    "author": "MD ZAWED ANSARI"
+  },
+  "services": {
+    "heading": "Our Expertise",
+    "image": "/img/services-img.jpg",
+    "subtext": "Expert Modular Kitchen, Wardrobes, and Interior works tailored for Modern India.",
+    "list": [
+      {
+        "title": "Modular Kitchen",
+        "desc": "Premium bespoke modular kitchens meticulously designed for modern households and max utility."
+      },
+      {
+        "title": "Wardrobes",
+        "desc": "Custom-fitted highly structural wardrobes blending deep storage capability with sleek aesthetics."
+      },
+      {
+        "title": "False Ceiling",
+        "desc": "Architecturally striking false ceiling designs incorporating hidden atmospheric LED lighting arrays."
+      },
+      {
+        "title": "Lighting Solution",
+        "desc": "Comprehensive illumination planning utilizing ambient and strict spotlighting algorithms."
+      },
+      {
+        "title": "Plumbing",
+        "desc": "Professional end-to-end robust plumbing routing frameworks and luxury fixture installation."
+      },
+      {
+        "title": "Residential & Commercial Interiors",
+        "desc": "Complete turnkey transformations tackling everything from massive corporate halls to intimate homes."
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose Sirahi",
+    "points": [
+      {
+        "icon": "fa-building",
+        "title": "In-House Manufacturing",
+        "desc": "Supreme quality control with zero compromises."
+      },
+      {
+        "icon": "fa-inr",
+        "title": "Cost Effective",
+        "desc": "Extensively planned quotes optimizing materials."
+      },
+      {
+        "icon": "fa-user",
+        "title": "Dedicated Managers",
+        "desc": "Your single point of contact from blueprint to handover."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Rohan Gupta",
+      "review": "Sirahi Infrastructure completely changed the dimension of my apartment in Delhi. The interior design speaks volume!"
+    },
+    {
+      "name": "Anjali Verma",
+      "review": "Their modular kitchen solutions were perfectly tailored to my needs. Impeccable finish and gold accents."
+    }
+  ],
+  "portfolio": {
+    "heading": "Our Work",
+    "projects": [
+      {
+        "image": "/img/generated/portfolio_kitchen.png",
+        "title": "Luxury Modular Kitchen",
+        "desc": "Sleek and modern dark-wood setup designed for a Delhi bungalow.",
+        "category": "kitchen"
+      },
+      {
+        "image": "/img/generated/port_kit1.png",
+        "title": "Premium Wooden Kitchen",
+        "desc": "Expansive warm oak finishes paired cleanly with matte black surfaces.",
+        "category": "kitchen"
+      },
+      {
+        "image": "/img/generated/port_kit2.png",
+        "title": "Bright Marble Kitchen",
+        "desc": "Luminous marble tops offset by subtle gold accent hardware.",
+        "category": "kitchen"
+      },
+      {
+        "image": "/img/generated/port_kit3.png",
+        "title": "Contemporary Island",
+        "desc": "Centered kitchen island layout with robust geometric mood lighting.",
+        "category": "kitchen"
+      },
+      {
+        "image": "/img/generated/portfolio_bedroom.png",
+        "title": "Opulent Master Suite",
+        "desc": "Premium built-in wardrobes and warm architectural lighting.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bed1.png",
+        "title": "Tufted Luxury Bedroom",
+        "desc": "Dark elegant aesthetics framed with a grand tufted bedboard.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/portfolio_living.png",
+        "title": "Architectural Lobby",
+        "desc": "High-end corporate office lobby interior in Noida.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/portfolio_kitchen.png",
+        "title": "Compact Modular Profile",
+        "desc": "Smart-fitted dark theme aesthetic designed for a modern apartment.",
+        "category": "kitchen"
+      },
+      {
+        "image": "/img/generated/portfolio_bedroom.png",
+        "title": "Guest Bedroom Layout",
+        "desc": "Minimalist wardrobes fused with sharp Indian interior themes.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bed1.png",
+        "title": "Vintage Suite Upgrade",
+        "desc": "Traditional heritage bedroom aesthetics modernized with sleek elements.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/portfolio_living.png",
+        "title": "Executive Boardroom",
+        "desc": "Spacious commercial boardroom showcasing powerful spatial geometry.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/port_kit3.png",
+        "title": "Minimalist Dining Hybrid",
+        "desc": "Shared culinary space blurring the lines between dining and prep.",
+        "category": "kitchen"
+      },
+      {
+        "image": "/img/generated/port_bath1.jpg",
+        "title": "Minimalist Master Bath",
+        "desc": "Seamless stone textures with elegant recessed lighting fixtures.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/port_bath1.jpg",
+        "title": "Modern Corporate Washroom",
+        "desc": "High-end commercial fixtures blending form and raw architecture.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/port_bath1.jpg",
+        "title": "Bespoke Vanity Layout",
+        "desc": "Custom handcrafted vanity installation using premium marble.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/portfolio_living.png",
+        "title": "Contemporary Living Space",
+        "desc": "Uncluttered geometric design featuring a bright, expansive window.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/portfolio_living.png",
+        "title": "Warm Residential Lounge",
+        "desc": "Aesthetic fusion of luxury seating and traditional wood accents.",
+        "category": "living"
+      }
+    ]
+  },
+  "team": {
+    "heading": "Our Designers",
+    "members": [
+      {
+        "name": "MD Zawed Ansari",
+        "role": "Managing Director",
+        "image": "/img/generated/designer_1.png",
+        "desc": "Spearheading Sirahi Infrastructure with over two decades of robust experience in core Indian construction methodologies and premium interior design standards."
+      },
+      {
+        "name": "Priya Sharma",
+        "role": "Lead Interior Architect",
+        "image": "/img/generated/designer_2.png",
+        "desc": "Priya bridges traditional Indian visual themes with minimalist modern infrastructure to deliver stunning residential masterpieces."
+      }
+    ]
+  },
+  "stats": {
+    "heading": "Company Legacy",
+    "stat1": {
+      "value": "850+",
+      "label": "Projects Completed"
+    },
+    "stat2": {
+      "value": "15",
+      "label": "Years Experience"
+    },
+    "stat3": {
+      "value": "200+",
+      "label": "Happy Families"
+    },
+    "stat4": {
+      "value": "50+",
+      "label": "Excellence Awards"
+    }
+  }
+}

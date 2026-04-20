@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 120" width="250" height="120">
+    <!-- Roof Arch over Siid -->
+    <!-- Orange left curve -->
+    <path d="M 40,50 Q 80,10 150,20" fill="none" stroke="#d07447" stroke-width="8" stroke-linecap="round"/>
+    <!-- Dark grey right curve -->
+    <path d="M 148,20 Q 220,30 240,90" fill="none" stroke="#2a323a" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Text Siid -->
+    <text x="50" y="100" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="70" fill="#2a323a">S</text>
+    
+    <!-- First i -->
+    <rect x="110" y="55" width="12" height="45" rx="2" fill="#2a323a" />
+    <circle cx="116" cy="38" r="8" fill="#4caf50" />
+    
+    <!-- Second i -->
+    <rect x="145" y="55" width="12" height="45" rx="2" fill="#2a323a" />
+    <circle cx="151" cy="38" r="8" fill="#4caf50" />
+    
+    <!-- Text d -->
+    <text x="175" y="100" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="70" fill="#d07447">d</text>
+</svg>

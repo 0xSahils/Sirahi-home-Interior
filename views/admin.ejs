@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirahi Infrastructure &amp; Interior Design</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #f5f5f5; padding-top: 20px; font-family: 'Open Sans', sans-serif; }
+        .navbar { background: #1a1a1a; }
+        .navbar-brand { color: #c49a45; font-weight: bold; }
+        .card-header { background: #2c2c2c; color: #c49a45; font-weight: bold; }
+        .btn-gold { background: #c49a45; color: #fff; }
+        .btn-gold:hover { background: #b08a3e; color: #fff; }
+        .img-preview { max-width: 150px; border: 1px solid #ccc; padding: 2px; }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.0/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.0/jsoneditor.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-dark fixed-top mb-4 shadow-sm">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1"><i class="fa fa-cogs"></i> Sirahi Dashboard</span>
+        <a href="/admin/logout" class="btn btn-sm btn-outline-light">Logout</a>
+        <a href="/" target="_blank" class="btn btn-sm btn-outline-warning ms-2">View Live Site</a>
+    </div>
+</nav>
+
+<div class="container" style="margin-top: 80px;">
+    
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <h2>Website Content Manager</h2>
+            <p>Update JSON configuration and upload Cloudinary media below.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Content Editor -->
+        <div class="col-md-7">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">Edit Site Content Data (JSON)</div>
+                <div class="card-body">
+                    <form method="POST" action="/admin/update" id="json-form">
+                        <div class="form-group mb-3">
+                            <input type="hidden" id="raw-json" value="<%= JSON.stringify(data) %>">
+                            <input type="hidden" name="data" id="hidden-data">
+                            <div id="jsoneditor" style="height: 600px; border: 1px solid #c49a45; border-radius: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"></div>
+                            <small class="text-muted mt-2 d-block">Use the graphical editor above to safely update website text and images. No coding required!</small>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-lg w-100">Save Content Updates</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Upload Panel -->
+        <div class="col-md-5">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">Upload Image to Cloudinary</div>
+                <div class="card-body">
+                    <form id="uploadForm">
+                        <div class="mb-3">
+                            <label class="form-label">Select Image</label>
+                            <input type="file" id="imageFile" class="form-control" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100" id="uploadBtn">Upload</button>
+                    </form>
+
+                    <div id="uploadResult" class="mt-4 d-none">
+                        <p class="text-success"><i class="fa fa-check"></i> Uploaded successfully!</p>
+                        <p><strong>Cloudinary URL:</strong></p>
+                        <input type="text" id="uploadedUrl" class="form-control mb-2" readonly>
+                        <button class="btn btn-sm btn-outline-primary" onclick="copyUrl()">Copy URL</button>
+                        <div class="mt-2 text-center">
+                            <img id="imgPreview" class="img-preview">
+                        </div>
+                        <hr>
+                        <small class="text-muted">Tip: Copy the URL above and paste it into the JSON editor on the left to set it as a section or portfolio image, then click Save Content Updates.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const fileInput = document.getElementById('imageFile');
+        const btn = document.getElementById('uploadBtn');
+        if (!fileInput.files[0]) return;
+
+        const formData = new FormData();
+        formData.append('image', fileInput.files[0]);
+
+        btn.disabled = true;
+        btn.innerHTML = "Uploading...";
+
+        try {
+            const response = await fetch('/admin/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            
+            if (data.url) {
+                document.getElementById('uploadResult').classList.remove('d-none');
+                document.getElementById('uploadedUrl').value = data.url;
+                document.getElementById('imgPreview').src = data.url;
+            } else {
+                alert("Upload failed: " + data.error);
+            }
+        } catch (err) {
+            alert("Error during upload.");
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = "Upload";
+       }
+    });
+
+    function copyUrl() {
+        var copyText = document.getElementById("uploadedUrl");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Copied URL to clipboard!");
+    }
+</script>
+<script>
+    const container = document.getElementById("jsoneditor");
+    const options = {
+        mode: 'form',
+        navigationBar: false,
+        search: false
+    };
+    const editor = new JSONEditor(container, options);
+    
+    try {
+        const initialData = JSON.parse(document.getElementById('raw-json').value);
+        editor.set(initialData);
+    } catch(e) {
+        console.error("Failed to parse initial data", e);
+    }
+
+    document.getElementById('json-form').addEventListener('submit', function() {
+        document.getElementById('hidden-data').value = JSON.stringify(editor.get());
+    });
+</script>
+</body>
+</html>

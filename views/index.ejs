@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Sirahi Infrastructure &amp; Interior Design</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+
+    <link rel="stylesheet" href="/css/fontawesome/css/font-awesome.min.css">
+    
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/boostrap/bootstrap.css">
+
+    <!-- Carousel CSS -->
+    <link rel="stylesheet" href="/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl-carousel/owl.theme.default.min.css">
+
+    <!--Magnific Popup-->
+    <link rel="stylesheet" href="/css/magnific-popup/magnific-popup.css">
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/css/animate/animate.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Responsive CSS-->
+    <link rel="stylesheet" href="/css/responsive.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+                    <div class="navbar-header">
+                        <!-- mobile menu -->
+                        <span id="mobile-nav-open-btn">
+                            &#9776;
+                        </span>
+                        <!-- logo -->
+                        <a class="navbar-brand" href="/" style="display: flex; align-items: center; padding: 10px 15px;">
+    <svg viewBox="0 0 250 120" style="height: 45px; width: auto; margin-right: 15px;">
+        <path d="M 40,50 Q 80,10 150,20" fill="none" stroke="#d07447" stroke-width="8" stroke-linecap="round"/>
+        <path d="M 148,20 Q 220,30 240,90" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+        <text x="50" y="100" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="70" fill="currentColor">S</text>
+        <rect x="110" y="55" width="12" height="45" rx="2" fill="currentColor" />
+        <circle cx="116" cy="38" r="8" fill="#4caf50" />
+        <rect x="145" y="55" width="12" height="45" rx="2" fill="currentColor" />
+        <circle cx="151" cy="38" r="8" fill="#4caf50" />
+        <text x="175" y="100" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="70" fill="#d07447">d</text>
+    </svg>
+    <div style="line-height: 1.1; margin-top: 5px; color: currentColor;">
+        <span style="font-weight: 700; font-size: 18px; letter-spacing: 0.5px;">Sirahi Infrastructure</span><br>
+        <span style="font-weight: 400; font-size: 13px; opacity: 0.85;">&amp; Interior Design.</span>
+    </div>
+</a>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="container">
+                        <!-- hides nav in small devices-->
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a class="smooth-scroll" href="#homepage">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#work-portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- mobile menu -->
+                    <div id="mobile-nav">
+                        <span id="mobile-nav-close-btn">
+                            &times;
+                        </span>
+
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li><a class="smooth-scroll" href="#homepage">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#work-portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header end-->
+
+    <!-- HOME PAGE -->
+    <section id="homepage">
+        <!-- background image-->
+        <img id="home-bg" src="<%= data.hero.background %>">
+        <!-- overlay-->
+        <div id="home-overlay"></div>
+
+        <!-- Home Content -->
+        <div id="home-content">
+            <div id="home-content-inner" class="text-center">
+                <div id="home-heading">
+                    <h1 id="home-heading1"><%= data.hero.heading1 %></h1><br>
+                    <h1 id="home-heading2"><%- data.hero.heading2 %></h1>
+                </div>
+                <div id="home-paragraph">
+                    <p><%= data.hero.subheading %></p>
+                </div>
+                <div id="home-button" class="smooth-scroll">
+                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button"><%= data.hero.buttonText %></a>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Down-->
+        <a href="#about" id="home-arrow smooth-scroll">
+            <i class="fa fa-angle-down"></i>
+        </a>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <!--About part 1 -->
+        <div id="about-part-1">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row" style="margin-bottom: 40px; display: flex; flex-wrap: wrap; align-items: center;">
+                        <!-- left column -->
+                        <div class="col-md-5 col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+                            <div id="about-left" class="header-big" data-aos="fade-right" data-aos-duration="1000">
+                                <h1 style="font-size: 50px;"> Our <strong style="color: #c49a45;">Story</strong></h1>
+                            </div>
+                        </div>
+
+                        <!-- right column -->
+                        <div class="col-md-7 col-sm-12 col-xs-12" >
+                            <div id="about-right" style="padding-left: 15px; border-left: 4px solid #c49a45;">
+                                <p data-aos="fade-up" data-aos-delay="100" style="font-size: 16px;"><%= data.about.text1 %></p>
+                                <p data-aos="fade-up" data-aos-delay="200" style="font-size: 16px;"><%= data.about.text2 %></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--About bottom-->
+                    <div class="row">
+                        <!--single column-->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div id="about-image" class="" data-aos="zoom-in" data-aos-duration="1500">
+                                <img src="<%= data.about.image %>" alt="About us" class="img-responsive" style="width: 100%; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- About 1 end -->
+
+
+        <!--About part 2-->
+        
+        <div id="about-part-2">
+            <div class="content-box-md">
+                <div class="container">
+                    <div class="row">
+                        <% data.about.features.forEach(function(feat, index) { %>
+                        <div class="col-md-4 col-sm-4">
+                            <div id="about<%= index+1 %>" class="about-item text-center " >
+                                <i class="fa <%= feat.icon %>" aria-hidden="true"></i>
+                                <h3><%= feat.title %></h3>
+                                <hr>
+                                <p><%= feat.desc %></p>
+                            </div>
+                        </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About part 2 end-->
+
+
+    </section>
+
+
+    <!--STATEMENT-->
+    <section id="statement">
+        <div class="content-box-lg" id="statement-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+<div id="quote" class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+    <h3><i class="fa fa-quote-left" aria-hidden="true"></i> <%= data.statement.quote %> <i class="fa fa-quote-right" aria-hidden="true"></i></h3>
+    <p> <%= data.statement.author %></p>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+
+        <!-- servies pt 1-->
+        <div id="services-part-1">
+            <div class="content-box-lg" id="service-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="services-heading" class="header-big">
+                                <h2 data-aos="fade-down"> Our <strong>Services</strong> </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="main-row">
+                        
+<div class="col-md-7 col-sm-7">
+    <img src="<%= data.services.image %>" class="img-responsive">
+    <h4 id="consultation" data-aos="fade-right"><strong><%= data.services.subtext %></strong></h4>
+</div>
+
+                        
+<div class="col-md-5 col-sm-5" id="service-attributes">
+    <% data.services.list.forEach(function(svc, idx) { %>
+    <div id="item<%= idx+1 %>" class="service " >
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h4> <%= svc.title %> </h4>
+                <p> <%= svc.desc %> </p>
+            </div>
+        </div>
+    </div>
+    <% }); %>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services end -->
+
+    
+    <!-- WHY CHOOSE US -->
+    <section id="why-choose-us" class="" data-aos="fade-left" data-aos-duration="1.5s" style="background:#1a1a1a; padding:60px 0;">
+        <div class="container text-center">
+            <div data-aos="fade-up" class="header-big text-center" style="margin-bottom:40px;">
+                <h2 style="color:#c49a45; font-weight:300;"> <%= data.whyChooseUs.heading %></h2>
+            </div>
+            <div class="row">
+                <% data.whyChooseUs.points.forEach(function(pt) { %>
+                <div class="col-md-4 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                    <div style="padding:30px; border:1px solid #c49a45; border-radius:10px; margin-bottom:15px; background: #000; transition: all 0.3s; min-height: 250px;">
+                        <i class="fa <%= pt.icon %>" style="font-size: 40px; color: #c49a45; margin-bottom: 20px;"></i>
+                        <h4 style="color:#fff; font-weight: 600; margin-bottom: 15px;"><%= pt.title %></h4>
+                        <p style="color:#f8f9fa;"><%= pt.desc %></p>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="" data-aos="fade-right" data-aos-duration="1.5s" style="background:#2c2c2c; padding:80px 0;">
+        <div class="container text-center">
+            <div data-aos="fade-up" class="header-big text-center" style="margin-bottom:40px;">
+                <h2 style="color:#fff; font-weight:300;">Client Testimonials</h2>
+            </div>
+            <div class="row">
+                <% data.testimonials.forEach(function(test) { %>
+                <div class="col-md-6 col-sm-12 col-xs-12" data-aos="zoom-in" data-aos-duration="1000">
+                    <div style="background:#1a1a1a; padding:40px; border-left:4px solid #c49a45; margin-bottom:20px; text-align:left; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                        <p style="color:#f8f9fa; font-style:italic; font-size: 16px; margin-bottom: 20px;">"<%- test.review %>"</p>
+                        <h4 style="color:#c49a45; font-weight: 600;">- <%= test.name %></h4>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK PORTFOLIO -->
+    <section id="work-portfolio">
+        <div class="content-box-md">
+            <div class="container" id="portfolio-container">
+                <div class="row" id="portfolio-row">
+                    <div class="col-md-12">
+
+                        <div id="portfolio-header" class="header-big wow slideInDown"  >
+                            <h2>Our <strong>Work</strong></h2>
+                        </div>
+
+                    </div>
+
+                    <!-- filters -->
+                    <div class="col-md-12">
+                        <div id="isotope-filters">
+                            <button class="btn active" data-filter="*"><span>Show All</span></button>
+
+                            <button class="btn" data-filter=".bedroom"><span>Bedroom</span></button>
+
+                            <button class="btn" data-filter=".bathroom"><span>Bathroom</span></button>
+
+                            <button class="btn" data-filter=".kitchen"><span>Kitchen</span></button>
+
+                            <button class="btn" data-filter=".living"><span>Living</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- portfolio wrapper -->
+            <section id="portfolio-wrapper">
+
+                <div class="container-fluid">
+
+                    <div class="row no-gutters">
+
+                        
+<div id="isotope-container">
+    <% data.portfolio.projects.forEach(function(proj) { %>
+    <div class="col-md-3 col-sm-6 col-xs-12 <%= proj.category %> " >
+        <div class="portfolio-item">
+            <a href="<%= proj.image %>" title="<%= proj.title %>">
+                <img src="<%= proj.image %>" class="img-responsive">
+                <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-details text-center">
+                        <h3><%= proj.title %></h3>
+                        <span></span>
+                        <p><%= proj.desc %></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <% }); %>
+</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </section>
+    <!--portfiolio end-->
+
+    <!--TEAM-->
+    <section id="team">
+        <div class="content-box-">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+
+                        <h2 id=team-header class="header-big wow slideInDown"  >Our <br> <strong>Designers</strong> </h2>
+
+                    </div>
+
+                    <div class="col-md-8">
+                        
+<div id="team-slider" class="owl-carousel owl-theme">
+    <% data.team.members.forEach(function(mem) { %>
+    <div class="team-member" data-aos="fade-left" data-aos-duration="1200" style="padding-top:10px;">
+        <h3 class="team-h3" style="color:#c49a45; font-size: 24px; margin-bottom: 5px;"><%= mem.name %></h3>
+        <h5 style="color:#fff; font-size: 14px; margin-bottom: 15px; font-weight:400;"><%= mem.role %></h5>
+        
+        <p style="color:#f8f9fa; line-height: 22px; margin-bottom: 20px;"><%= mem.desc %></p>
+        
+        <img src="<%= mem.image %>" class="img-responsive" style="border-radius:10px; max-height: 400px; object-fit: cover; object-position: top; width: 100%;">
+    </div>
+    <% }); %>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--team end-->
+
+    <!--STATS-->
+    <section id="stats">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Header-->
+                    <div class="col-md-5">
+                        <div id="stats-heading" class="header-big">
+                            <h2>Design <br><strong>Leaders</strong></h2>
+                        </div>
+                    </div>
+                    
+<!-- Stats -->
+<div class="col-md-7">
+    <div class="col-md-3">
+        <div class="stats-item text-center" data-aos="flip-up" data-aos-duration="1000">
+            <i class="fa fa-line-chart" aria-hidden="true" style="color:#c49a45;"></i>
+            <h3 class="counter" style="color:#fff;"><%= data.stats.stat1.value %></h3>
+            <p style="color:#f8f9fa;"><%= data.stats.stat1.label %></p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-item text-center" data-aos="flip-up" data-aos-duration="1000">
+            <i class="fa fa-calendar-check-o" aria-hidden="true" style="color:#c49a45;"></i>
+            <h3 class="counter" style="color:#fff;"><%= data.stats.stat2.value %></h3>
+            <p style="color:#f8f9fa;"><%= data.stats.stat2.label %></p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-item text-center" data-aos="flip-up" data-aos-duration="1000">
+            <i class="fa fa-users" aria-hidden="true" style="color:#c49a45;"></i>
+            <h3 class="counter" style="color:#fff;"><%= data.stats.stat3.value %></h3>
+            <p style="color:#f8f9fa;"><%= data.stats.stat3.label %></p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="stats-item text-center" data-aos="flip-up" data-aos-duration="1000">
+            <i class="fa fa-trophy" aria-hidden="true" style="color:#c49a45;"></i>
+            <h3 class="counter" style="color:#fff;"><%= data.stats.stat4.value %></h3>
+            <p style="color:#f8f9fa;"><%= data.stats.stat4.label %></p>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stats end-->
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="content-box-md">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                        <div id="contact-left">
+                            <div class="header-big wow slideInDown" id="contact-heading"  >
+                                <h2>Get <br> In <strong>Touch</strong></h2>
+
+                                <p id="blurb">Interested in working with us? Request a free consultation by calling us at the number below, or contacting us via email.</p>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                                        <p id=address>
+                                            <%= data.contact.address %>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                                        <p class="contact-more">
+                                            <Strong>Phone:</Strong>
+
+                                            <%= data.contact.phone1 %> <br>
+                                            <%= data.contact.phone2 %>
+                                        </p>
+
+                                        <p class="contact-more">
+                                            <Strong>Email:</Strong>
+
+                                            <%= data.contact.email %>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                        <div id="contact-right" class="" >
+                            <form>
+                                <h4>Contact Us</h4>
+                                <p id="blurb2">Send us a message and a member of our team will contact you within 1-2 business days.</p>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" placeholder="Your full name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" placeholder="Email address">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="phone-number" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" placeholder=Subject>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Your message here..."></textarea>
+                                </div>
+
+                                <div id="send-btn">
+                                    <a class="btn btn-general" href="#" title="Send" role="button">Send Message</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact end-->
+
+    <!-- FOOTER -->
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2026 All Rights Reserved by <span><%= data.general.companyName %></span> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end-->
+
+
+
+    <!-- JQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap JS file -->
+    <script src="/js/bootstrap/bootstrap.js"></script>
+
+    <!--Carousel JS file-->
+    <script src="/js/owl-carousel/owl.carousel.min.js"></script>
+
+
+    <!--Isotope JS file -->
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+    <!--Magnific JS file-->
+    <script src="/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    
+    <!--WOW JS file-->
+    <script src="/js/wow/wow.min.js"></script>
+
+    <!-- Custom JS file -->
+    <script src="/js/script.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+</body>
+
+</html>
