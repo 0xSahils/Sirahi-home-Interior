@@ -146,3 +146,45 @@ $(window).on('load', function() {
     $("#home-button").addClass("animated zoomIn");
 });
 setTimeout(function(){ $('#preloader').fadeOut('slow'); }, 3000);
+
+// ===================================================
+// Sticky Portfolio Filters - JS Scroll-based (Reliable)
+// ===================================================
+$(window).on('scroll', function() {
+    var navbarH = $('.navbar').outerHeight() || 60;
+    var filters = $('#isotope-filters');
+    var portfolio = $('#work-portfolio');
+
+    if (!portfolio.length || !filters.length) return;
+
+    var portfolioTop    = portfolio.offset().top;
+    var portfolioBottom = portfolioTop + portfolio.outerHeight();
+    var scrollTop       = $(window).scrollTop();
+    var filtersH        = filters.outerHeight();
+
+    // When scroll enters the portfolio section
+    if (scrollTop + navbarH >= portfolioTop && scrollTop + navbarH + filtersH <= portfolioBottom) {
+        // Pin it
+        if (!filters.hasClass('filters-fixed')) {
+            filters
+                .addClass('filters-fixed')
+                .css({ top: navbarH + 'px', width: filters.parent().width() + 'px' });
+            // Add placeholder to avoid layout jump
+            $('#filters-placeholder').height(filtersH);
+        }
+    } else {
+        // Unpin it
+        if (filters.hasClass('filters-fixed')) {
+            filters.removeClass('filters-fixed').css({ top: '', width: '' });
+            $('#filters-placeholder').height(0);
+        }
+    }
+});
+
+// Recalculate on resize
+$(window).on('resize', function() {
+    var filters = $('#isotope-filters');
+    if (filters.hasClass('filters-fixed')) {
+        filters.css({ width: filters.parent().width() + 'px' });
+    }
+});
