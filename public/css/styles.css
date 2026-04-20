@@ -19,10 +19,8 @@ Html, Body
 .small-text {display: none;}
 
 html {
-    height: 100%;
 }
 body {
-    height: 100%;
     width: 100%;
     overflow-x: hidden;
     /*make website fullscreen*/
@@ -113,7 +111,7 @@ Home:
 
 #homepage {
     background: none;
-    height: 100%
+    height: 100vh
 }
 
 #home-content {
@@ -764,4 +762,32 @@ Animations:
     animation-duration: 1.5;
     -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
+}
+
+/* Sticky Portfolio Filters */
+.sticky-filters {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px; 
+    z-index: 1000;
+    background-color: rgba(26, 26, 26, 0.95);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #c49a45;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+    width: 100%;
+}
+@media(max-width:767px) {
+    .sticky-filters {
+        top: 60px; /* Bootstrap mobile navbar height compensation */
+        padding: 5px 0;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .sticky-filters .btn {
+        padding: 5px 15px !important;
+        font-size: 10px !important;
+        margin: 0 !important;
+    }
 }

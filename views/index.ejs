@@ -50,7 +50,7 @@
 </head>
 
 <body>
-
+<div class="site-wrapper" style="overflow-x: hidden; width: 100%; position: relative;">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -331,22 +331,16 @@
 
                     </div>
 
-                    <!-- filters -->
-                    <div class="col-md-12">
-                        <div id="isotope-filters">
-                            <button class="btn active" data-filter="*"><span>Show All</span></button>
+                                    </div>
+            </div>
 
-                            <button class="btn" data-filter=".bedroom"><span>Bedroom</span></button>
-
-                            <button class="btn" data-filter=".bathroom"><span>Bathroom</span></button>
-
-                            <button class="btn" data-filter=".kitchen"><span>Kitchen</span></button>
-
-                            <button class="btn" data-filter=".living"><span>Living</span></button>
-                        </div>
-                    </div>
-
-                </div>
+            <!-- filters sticky wrapper -->
+            <div id="isotope-filters" class="sticky-filters">
+                <button class="btn active" data-filter="*"><span>Show All</span></button>
+                <button class="btn" data-filter=".bedroom"><span>Bedroom</span></button>
+                <button class="btn" data-filter=".bathroom"><span>Bathroom</span></button>
+                <button class="btn" data-filter=".kitchen"><span>Kitchen</span></button>
+                <button class="btn" data-filter=".living"><span>Living</span></button>
             </div>
 
             <!-- portfolio wrapper -->
@@ -605,6 +599,7 @@
     <a href="https://instagram.com" class="float-social float-ig" target="_blank">
         <i class="fa fa-instagram"></i>
     </a>
+</div>
 </body>
 
 </html>
