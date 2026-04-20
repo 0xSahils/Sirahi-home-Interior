@@ -18,7 +18,9 @@ Html, Body
 
 .small-text {display: none;}
 
-html,
+html {
+    height: 100%;
+}
 body {
     height: 100%;
     width: 100%;
