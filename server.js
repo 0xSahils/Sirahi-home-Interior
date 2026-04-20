@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
 const cloudinary = require('cloudinary').v2;
+const os = require('os');
 require('dotenv').config();
 
 const app = express();
@@ -82,7 +83,7 @@ app.get('/admin', auth, (req, res) => {
     res.render('admin', { data });
 });
 
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: os.tmpdir() });
 
 app.post('/admin/update', auth, (req, res) => {
     const newData = req.body.data;
@@ -116,6 +117,9 @@ app.post('/admin/upload', auth, upload.single('image'), async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`Server is running on http://localhost:${PORT}`);
+    });
+}
+module.exports = app;
