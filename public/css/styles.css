@@ -21,6 +21,8 @@ Html, Body
 html,
 body {
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     /*make website fullscreen*/
 }
 
@@ -177,7 +179,7 @@ Buttons:
     border-radius: 28px;
     font-size: 12px;
     text-transform: uppercase;
-    margin 0 6px;
+    margin: 0 6px;
     padding: 12px 30px 12px 30px;
     -webkit-transition: all .5s;
     transition: all .5s;
