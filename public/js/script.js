@@ -43,8 +43,16 @@ $(function () {
         // gallery option
         gallery: {
             enabled: true
+        },
+        callbacks: {
+            elementParse: function(item) {
+                if(item.el[0].classList.contains('popup-video')) {
+                    item.type = 'iframe';
+                } else {
+                    item.type = 'image';
+                }
+            }
         }
-
     });
 });
 

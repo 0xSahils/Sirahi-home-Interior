@@ -356,8 +356,9 @@
     <% data.portfolio.projects.forEach(function(proj) { %>
     <div class="col-md-3 col-sm-6 col-xs-12 <%= proj.category %> " >
         <div class="portfolio-item">
-            <a href="<%= proj.image %>" title="<%= proj.title %>">
-                <img src="<%= proj.image %>" class="img-responsive">
+            <% if (proj.image && proj.image.endsWith('.mp4')) { %>
+            <a href="<%= proj.image %>" title="<%= proj.title %>" class="popup-video">
+                <video src="<%= proj.image %>" class="img-responsive" muted loop autoplay playsinline style="object-fit: cover; aspect-ratio: 1; width: 100%; object-position: center;"></video>
                 <div class="portfolio-item-overlay">
                     <div class="portfolio-item-details text-center">
                         <h3><%= proj.title %></h3>
@@ -366,6 +367,18 @@
                     </div>
                 </div>
             </a>
+            <% } else { %>
+            <a href="<%= proj.image %>" title="<%= proj.title %>">
+                <img src="<%= proj.image %>" class="img-responsive" style="object-fit: cover; aspect-ratio: 1; width: 100%;">
+                <div class="portfolio-item-overlay">
+                    <div class="portfolio-item-details text-center">
+                        <h3><%= proj.title %></h3>
+                        <span></span>
+                        <p><%= proj.desc %></p>
+                    </div>
+                </div>
+            </a>
+            <% } %>
         </div>
     </div>
     <% }); %>
@@ -399,7 +412,7 @@
         
         <p style="color:#f8f9fa; line-height: 22px; margin-bottom: 20px;"><%= mem.desc %></p>
         
-        <img src="<%= mem.image %>" class="img-responsive" style="border-radius:10px; max-height: 400px; object-fit: cover; object-position: top; width: 100%;">
+        <img src="<%= mem.image %>" class="img-responsive" style="border-radius:10px; height: auto; width: 100%; object-fit: contain;">
     </div>
     <% }); %>
 </div>
@@ -466,82 +479,41 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 text-center" data-aos="fade-up" data-aos-duration="1000">
                         <div id="contact-left">
                             <div class="header-big wow slideInDown" id="contact-heading"  >
                                 <h2>Get <br> In <strong>Touch</strong></h2>
 
-                                <p id="blurb">Interested in working with us? Request a free consultation by calling us at the number below, or contacting us via email.</p>
+                                <p id="blurb" style="margin: 0 auto 50px auto; max-width: 800px; font-size: 18px;">Interested in working with us? Request a free consultation by contacting us via the details below.</p>
 
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <p id=address>
+                                <div class="row" style="text-align: center; margin-top: 40px;">
+                                    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 30px;" data-aos="fade-up" data-aos-duration="1000">
+                                        <i class="fa fa-map-marker" style="font-size: 40px; margin-bottom: 20px; color: #dcb360;"></i>
+                                        <h4 style="margin-bottom: 15px; color: #fff;">Address</h4>
+                                        <p style="font-size: 16px; color: #f8f9fa;">
                                             <%= data.contact.address %>
                                         </p>
                                     </div>
 
-                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <p class="contact-more">
-                                            <Strong>Phone:</Strong>
-
+                                    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 30px;" data-aos="fade-up" data-aos-duration="1000">
+                                        <i class="fa fa-phone" style="font-size: 40px; margin-bottom: 20px; color: #dcb360;"></i>
+                                        <h4 style="margin-bottom: 15px; color: #fff;">Phone</h4>
+                                        <p style="font-size: 16px; color: #f8f9fa;">
                                             <%= data.contact.phone1 %> <br>
                                             <%= data.contact.phone2 %>
                                         </p>
+                                    </div>
 
-                                        <p class="contact-more">
-                                            <Strong>Email:</Strong>
-
+                                    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 30px;" data-aos="fade-up" data-aos-duration="1000">
+                                        <i class="fa fa-envelope" style="font-size: 40px; margin-bottom: 20px; color: #dcb360;"></i>
+                                        <h4 style="margin-bottom: 15px; color: #fff;">Email</h4>
+                                        <p style="font-size: 16px; color: #f8f9fa;">
                                             <%= data.contact.email %>
                                         </p>
                                     </div>
                                 </div>
 
-
                             </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                        <div id="contact-right" class="" >
-                            <form>
-                                <h4>Contact Us</h4>
-                                <p id="blurb2">Send us a message and a member of our team will contact you within 1-2 business days.</p>
-
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="Your full name">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="Email address">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="phone-number" placeholder="Phone Number">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="subject" placeholder=Subject>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Your message here..."></textarea>
-                                </div>
-
-                                <div id="send-btn">
-                                    <a class="btn btn-general" href="#" title="Send" role="button">Send Message</a>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
