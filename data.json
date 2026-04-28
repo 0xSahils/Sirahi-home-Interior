@@ -110,176 +110,116 @@
     "heading": "Our Work",
     "projects": [
       {
-        "image": "/img/work/work-img-1.jpeg",
-        "title": "Bespoke Wardrobe Solution 1",
-        "desc": "Dark elegant aesthetics framed with grand built-ins.",
-        "category": "bedroom"
-      },
-      {
         "image": "/img/work/work-img-2.jpeg",
-        "title": "Warm Residential Lounge 2",
+        "title": "Warm Residential Lounge ",
         "desc": "Spacious commercial boardroom showcasing spatial geometry.",
         "category": "living"
       },
       {
         "image": "/img/work/work-img-3.jpeg",
-        "title": "Premium Wooden Kitchen 3",
+        "title": "Premium Wooden Kitchen ",
         "desc": "Expansive warm finishes paired cleanly with matte surfaces.",
         "category": "kitchen"
       },
       {
-        "image": "/img/work/work-img-4.jpeg",
-        "title": "Executive Boardroom Layout 4",
-        "desc": "Aesthetic fusion of luxury seating and wood panels.",
-        "category": "living"
-      },
-      {
         "image": "/img/work/work-img-5.jpeg",
-        "title": "Minimalist Study setup 5",
+        "title": "Minimalist Study setup ",
         "desc": "Premium finishes with tailored storage layouts.",
         "category": "bedroom"
       },
       {
         "image": "/img/work/work-img-6.jpeg",
-        "title": "Dark Theme Aesthetics 6",
+        "title": "Dark Theme Aesthetics ",
         "desc": "Smart-fitted dark theme aesthetic designed for modern apartments.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-img-7.jpeg",
-        "title": "Warm Residential Lounge 7",
+        "title": "Warm Residential Lounge ",
         "desc": "Spacious commercial boardroom showcasing spatial geometry.",
         "category": "living"
       },
       {
         "image": "/img/work/work-img-8.jpeg",
-        "title": "Warm Residential Lounge 8",
+        "title": "Warm Residential Lounge ",
         "desc": "Uncluttered geometric design featuring luxury accents.",
         "category": "living"
       },
       {
-        "image": "/img/work/work-img-9.jpeg",
-        "title": "Dark Theme Aesthetics 9",
-        "desc": "Luminous tops offset by subtle gold accent hardware.",
-        "category": "kitchen"
-      },
-      {
         "image": "/img/work/work-img-10.jpeg",
-        "title": "Premium Wooden Kitchen 10",
+        "title": "Premium Wooden Kitchen ",
         "desc": "Smart-fitted dark theme aesthetic designed for modern apartments.",
         "category": "kitchen"
       },
       {
-        "image": "/img/work/work-img-11.jpeg",
-        "title": "Executive Boardroom Layout 11",
-        "desc": "High-end lobby interior featuring premium lighting.",
-        "category": "living"
-      },
-      {
-        "image": "/img/work/work-img-12.jpeg",
-        "title": "Vintage Suite Upgrade 12",
-        "desc": "Premium finishes with tailored storage layouts.",
-        "category": "bedroom"
-      },
-      {
-        "image": "/img/work/work-img-13.jpeg",
-        "title": "Minimalist Study setup 13",
-        "desc": "Premium built-in wardrobes and warm architectural lighting.",
-        "category": "bedroom"
-      },
-      {
         "image": "/img/work/work-img-14.jpeg",
-        "title": "Contemporary Island Layout 14",
+        "title": "Contemporary Island Layout ",
         "desc": "Luminous tops offset by subtle gold accent hardware.",
         "category": "kitchen"
       },
       {
-        "image": "/img/work/work-img-15.jpeg",
-        "title": "Contemporary Island Layout 15",
-        "desc": "Sleek and modern setup designed for large residences.",
-        "category": "kitchen"
-      },
-      {
-        "image": "/img/work/work-img-16.jpeg",
-        "title": "Tufted Luxury Bedroom 16",
-        "desc": "Premium built-in wardrobes and warm architectural lighting.",
-        "category": "bedroom"
-      },
-      {
         "image": "/img/work/work-img-17.jpeg",
-        "title": "Bright Marble Kitchen 17",
+        "title": "Bright Marble Kitchen ",
         "desc": "Smart-fitted dark theme aesthetic designed for modern apartments.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-img-18.jpeg",
-        "title": "Executive Boardroom Layout 18",
+        "title": "Executive Boardroom Layout ",
         "desc": "Uncluttered geometric design featuring luxury accents.",
         "category": "living"
       },
       {
         "image": "/img/work/work-img-19.jpeg",
-        "title": "Dark Theme Aesthetics 19",
+        "title": "Dark Theme Aesthetics ",
         "desc": "Smart-fitted dark theme aesthetic designed for modern apartments.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-img-20.jpeg",
-        "title": "Bright Marble Kitchen 20",
+        "title": "Bright Marble Kitchen ",
         "desc": "Expansive warm finishes paired cleanly with matte surfaces.",
         "category": "kitchen"
       },
       {
-        "image": "/img/work/work-img-21.jpeg",
-        "title": "Executive Boardroom Layout 21",
-        "desc": "Aesthetic fusion of luxury seating and wood panels.",
-        "category": "living"
-      },
-      {
-        "image": "/img/work/work-img-22.jpeg",
-        "title": "Compact Modular Profile 22",
-        "desc": "Smart-fitted dark theme aesthetic designed for modern apartments.",
-        "category": "kitchen"
-      },
-      {
         "image": "/img/work/work-img-23.jpeg",
-        "title": "Bespoke Wardrobe Solution 23",
+        "title": "Bespoke Wardrobe Solution ",
         "desc": "Minimalist layout fused with sharp Indian interior themes.",
         "category": "bedroom"
       },
       {
         "image": "/img/work/work-img-24.jpeg",
-        "title": "Premium Wooden Kitchen 24",
+        "title": "Premium Wooden Kitchen ",
         "desc": "Expansive warm finishes paired cleanly with matte surfaces.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-vid-1.mp4",
-        "title": "Premium Wooden Kitchen 25",
+        "title": "Premium Wooden Kitchen ",
         "desc": "Smart-fitted dark theme aesthetic designed for modern apartments.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-vid-2.mp4",
-        "title": "Opulent Master Suite 26",
+        "title": "Opulent Master Suite ",
         "desc": "Dark elegant aesthetics framed with grand built-ins.",
         "category": "bedroom"
       },
       {
         "image": "/img/work/work-vid-3.mp4",
-        "title": "Contemporary Island Layout 27",
+        "title": "Contemporary Island Layout ",
         "desc": "Sleek and modern setup designed for large residences.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-vid-4.mp4",
-        "title": "Luxury Modular Kitchen 28",
+        "title": "Luxury Modular Kitchen ",
         "desc": "Sleek and modern setup designed for large residences.",
         "category": "kitchen"
       },
       {
         "image": "/img/work/work-vid-5.mp4",
-        "title": "Dark Theme Aesthetics 29",
+        "title": "Dark Theme Aesthetics ",
         "desc": "Luminous tops offset by subtle gold accent hardware.",
         "category": "kitchen"
       }
