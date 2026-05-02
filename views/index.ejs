@@ -406,13 +406,15 @@
                     <div class="col-md-8 col-sm-12 col-xs-12" data-aos="fade-left" data-aos-duration="1500">
                         <div id="team-slider" class="owl-carousel owl-theme">
     <% data.team.members.forEach(function(mem) { %>
-    <div class="team-member" style="padding-top:10px;">
+    <div class="team-member">
         <h3 class="team-h3" style="color:#c49a45; font-size: 24px; margin-bottom: 5px;"><%= mem.name %></h3>
         <h5 style="color:#fff; font-size: 14px; margin-bottom: 15px; font-weight:400;"><%= mem.role %></h5>
         
+        <% if (mem.desc) { %>
         <p style="color:#f8f9fa; line-height: 22px; margin-bottom: 20px;"><%= mem.desc %></p>
+        <% } %>
         
-        <img src="<%= mem.image %>" class="img-responsive" style="border-radius:10px; height: auto; width: 100%; object-fit: contain;">
+        <img src="<%= mem.image %>" class="img-responsive">
     </div>
     <% }); %>
 </div>
@@ -499,8 +501,10 @@
                                         <i class="fa fa-phone" style="font-size: 40px; margin-bottom: 20px; color: #dcb360;"></i>
                                         <h4 style="margin-bottom: 15px; color: #fff;">Phone</h4>
                                         <p style="font-size: 16px; color: #f8f9fa;">
-                                            <%= data.contact.phone1 %> <br>
-                                            <%= data.contact.phone2 %>
+                                            <%= data.contact.phone1 %>
+                                            <% if (data.contact.phone2) { %>
+                                                <br> <%= data.contact.phone2 %>
+                                            <% } %>
                                         </p>
                                     </div>
 
@@ -566,7 +570,7 @@
     <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
 
     <!-- Floating Socials -->
-    <a href="https://wa.me/919650598785" class="float-social float-wa" target="_blank">
+    <a href="https://wa.me/918271291777" class="float-social float-wa" target="_blank">
         <i class="fa fa-whatsapp"></i>
     </a>
     <a href="https://instagram.com" class="float-social float-ig" target="_blank">

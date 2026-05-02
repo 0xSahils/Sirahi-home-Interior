@@ -5,8 +5,8 @@
   },
   "contact": {
     "address": "E-243A, A-8 Ground Floor, Abul Fazal Enclave-2, Shaheen Bagh, Okhla, New Delhi-110025",
-    "phone1": "+91 9650598785",
-    "phone2": "+91 9899759470",
+    "phone1": "+91 8271291777",
+    "phone2": "",
     "email": "sirahiinfrainteriordesign@gmail.com",
     "gstin": "07DCYPA1228R1ZZ",
     "md": "MD ZAWED ANSARI"
@@ -218,6 +218,96 @@
         "category": "kitchen"
       },
       {
+        "image": "/img/generated/port_liv_minimalist.png",
+        "title": "Minimalist Zen Living",
+        "desc": "Serene and uncluttered living space featuring natural light and bamboo accents.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/port_liv_industrial.png",
+        "title": "Industrial Mumbai Loft",
+        "desc": "Bold exposed brick and concrete textures for a modern urban lifestyle.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/port_liv_royal.png",
+        "title": "Royal Palace Lounge",
+        "desc": "Grand traditional Indian design with intricate wood carvings and gold brocade.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/port_liv_boho.png",
+        "title": "Vibrant Bohemian Living",
+        "desc": "A cozy blend of natural textures, indoor plants, and colorful patterns.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/port_bed_skyline.png",
+        "title": "Skyline Penthouse Suite",
+        "desc": "Luxury bedroom with floor-to-ceiling views of the city skyline.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bed_cozy.png",
+        "title": "Heritage Cozy Suite",
+        "desc": "Traditional four-poster bed with authentic Indian block-print linens.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bed_monochrome.png",
+        "title": "Sleek Monochrome Bedroom",
+        "desc": "Modern minimalist design using a sophisticated grey and black palette.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bed_artdeco.png",
+        "title": "Glamorous Art Deco Suite",
+        "desc": "Bold geometric patterns and gold accents for a luxurious retreat.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bath_spa.png",
+        "title": "Tranquil Spa Bath",
+        "desc": "Natural stone and wood elements creating a serene spa-like environment.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/port_bath_ultra.png",
+        "title": "Ultra-Modern Smart Bath",
+        "desc": "High-tech bathroom featuring smart mirrors and sleek black fixtures.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/port_bath_marble.png",
+        "title": "Classic Marble & Gold Bath",
+        "desc": "Timeless luxury with white marble and premium gold-plated fixtures.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/port_bath_vintage.png",
+        "title": "Eclectic Vintage Modern Bath",
+        "desc": "Stylish combination of patterned tiles and classic brass hardware.",
+        "category": "bathroom"
+      },
+      {
+        "image": "/img/generated/port_living_modern.png",
+        "title": "Luxury Modern Living ",
+        "desc": "Bespoke Indian modern living room with warm wooden textures and gold accents.",
+        "category": "living"
+      },
+      {
+        "image": "/img/generated/port_bedroom_modern.png",
+        "title": "Opulent Master Suite ",
+        "desc": "Elegant Indian bedroom design featuring rich textures and ambient lighting.",
+        "category": "bedroom"
+      },
+      {
+        "image": "/img/generated/port_bathroom_modern.png",
+        "title": "Contemporary Marble Bath ",
+        "desc": "High-end bathroom with premium marble finishes and gold fixtures.",
+        "category": "bathroom"
+      },
+      {
         "image": "/img/work/work-vid-5.mp4",
         "title": "Dark Theme Aesthetics ",
         "desc": "Luminous tops offset by subtle gold accent hardware.",
@@ -229,16 +319,28 @@
     "heading": "Our Designers",
     "members": [
       {
-        "name": "MD Zawed Ansari",
-        "role": "Managing Director",
-        "image": "/img/generated/designer_1.png",
-        "desc": "Spearheading Sirahi Infrastructure with over two decades of robust experience in core Indian construction methodologies and premium interior design standards."
+        "name": "Md Zawed Ansari",
+        "role": "Founder & Managing Director",
+        "image": "/img/generated/designer_1.jpeg",
+        "desc": "As our Founder and Managing Director with 15 years of deep expertise in high-end construction and interior solutions, Md Zawed leads Sirahi with a commitment to unmatched quality and client-centric innovation."
       },
       {
-        "name": "Priya Sharma",
-        "role": "Lead Interior Architect",
-        "image": "/img/generated/designer_2.png",
-        "desc": "Priya bridges traditional Indian visual themes with minimalist modern infrastructure to deliver stunning residential masterpieces."
+        "name": "Md Sarfuddin Ansari",
+        "role": "Creative Director – Interior Design",
+        "image": "/img/generated/Md Sarfuddin.jpeg",
+        "desc": "With 15 years of creative mastery in interior design, Md Sarfuddin serves as our Creative Director, specializing in transforming architectural blueprints into luxurious, functional living spaces."
+      },
+      {
+        "name": "Md Afjal Hussain",
+        "role": "Project Head – Construction",
+        "image": "/img/generated/Md Afjal Hussain.jpeg",
+        "desc": "With 5 years of dedicated experience in construction project management, Md Afjal Hussain ensures every site is managed with precision, safety, and a focus on structural excellence."
+      },
+      {
+        "name": "Injmam",
+        "role": "IT Head / Digital Operations Manager",
+        "image": "/img/generated/Injmam.jpeg",
+        "desc": "As our Digital Operations Manager, Injmam spearheads our technological growth, ensuring seamless IT infrastructure and digital efficiency across all our project lifecycles."
       }
     ]
   },

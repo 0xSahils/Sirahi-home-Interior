@@ -553,37 +553,57 @@ Team Section:
 
 #team-header {
     font-size: 42px;
-    font-weight:300
+    font-weight: 300;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
-    font-size: 40px;
-    margin:30;
-   
+.team-member {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(196, 154, 69, 0.2);
+    transition: all 0.3s ease;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-#team i{
-    color:#000000; 
-    font-size: 32px;
-    text-shadow: none;
+.team-member:hover {
+    border-color: #c49a45;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
 }
 
-#team-slider p {
-    margin-left: 20px;
-    color: black;
-    text-shadow:none;
-    font-size: 15px;
-    font-family: "Raleway";
+.team-member img {
+    border-radius: 10px;
+    height: auto !important;
+    width: 100% !important;
+    max-height: 500px;
+    object-fit: contain !important;
+    margin-top: 15px;
+    border: 2px solid rgba(196, 154, 69, 0.1);
+    background: #000;
+}
+
+.team-member .team-h3 {
+    margin-top: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.team-member h5 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.9;
 }
 
 #team {
-    padding-top:20px;
+    padding: 80px 0;
     background-color: #2c2c2c;
-    padding-bottom: 45px;
 }
 
 #team h2 {
-    padding-top: 10px;
+    padding-top: 0;
 }
 
 /* ==================================================
