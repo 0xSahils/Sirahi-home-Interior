@@ -723,8 +723,17 @@ Naviation Bar
     align-items: center;
 }
 
+.navbar > .container-fluid {
+    padding-left: 20px;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
 .site-nav-wrapper {
-    padding: 0 35px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar-brand {

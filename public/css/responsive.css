@@ -4,22 +4,78 @@ Mobile Menu:
 ====================================================*/
 
 .navbar-header {
-    position:relative;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Desktop/tablet: one row — logo left, links right (float is disabled while header is flex + full width) */
+@media (min-width: 768px) {
+    .site-nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .navbar-header {
+        width: auto;
+        flex: 0 0 auto;
+        justify-content: flex-start;
+    }
+
+    .site-nav-wrapper > .container {
+        width: auto;
+        max-width: none;
+        flex: 1 1 auto;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 0;
+    }
+
+    .site-nav-wrapper > .container > .navbar-collapse {
+        flex: 1 1 auto;
+        display: flex !important;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .site-nav-wrapper > .container .navbar-nav {
+        float: none;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .site-nav-wrapper > .container .navbar-nav > li {
+        float: none;
+    }
 }
 
 #mobile-nav-open-btn {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
-    z-index: 2;
-    position: absolute;
-    right:0;
-    top:6px;
-    -webkit-transition: 0.3s;    transition: 0.3s;
+    z-index: 2000;
+    position: relative;
+    line-height: 1;
+    padding: 8px 4px 8px 12px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    flex-shrink: 0;
     
     /*hiding*/
-    display:none;
-    
+    display: none;
 }
 
 #mobile-nav-open-btn:hover, #mobile-nav-open-btn:focus {
@@ -95,7 +151,7 @@ Bootstrap Media Queries:
 
     /* fix the navigation bar*/
     .site-nav-wrapper {
-        padding: 0 20px;
+        padding: 0 24px;
     }
 
     #contact-heading h2,
@@ -113,7 +169,7 @@ Bootstrap Media Queries:
 /*medium devices ~ landscape tablets & med. desktops*/
 @media(min-width: 992px) and (max-width: 1199px) {
     .site-nav-wrapper {
-        padding:0;
+        padding: 0 20px;
     }
     
  
@@ -142,7 +198,7 @@ Bootstrap Media Queries:
     
   
     .site-nav-wrapper {
-        padding: 0;
+        padding: 0 20px;
     }
     
     #home-heading h1 {
@@ -167,11 +223,50 @@ Bootstrap Media Queries:
 @media(max-width:767px) {
     
     .site-nav-wrapper, .white-nav-top {
-        padding:0;
+        padding: 0 20px;
     }
     
     .navbar {
-        padding:20px 0;
+        padding: 12px 0;
+    }
+
+    /* Ensure logo and hamburger sit on one row and don't overlap */
+    .navbar .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-header {
+        min-height: auto;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        float: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    .navbar-brand .brand-wrap {
+        height: auto;
+        gap: 8px;
+    }
+
+    .navbar-brand .brand-logo {
+        height: 50px;
+    }
+
+    /* Remove desktop nav from layout flow (avoids extra gap / stacking quirks) */
+    .site-nav-wrapper > .container {
+        display: none;
+    }
+
+    /* the desktop menu should stay hidden on phones */
+    .collapse.navbar-collapse {
+        display: none !important;
     }
     
     /*display mobile menu*/
@@ -228,8 +323,7 @@ Bootstrap Media Queries:
     }
 
     #consultation,
-    #service-box h4,
-        {
+    #service-box h4 {
         font-size: 15px;
     }
 
