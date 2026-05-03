@@ -11,7 +11,14 @@
     <title>Sirahi Infrastructure &amp; Interior Design</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/logo.svg" type="image/svg+xml">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/logo/fonts/main-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo/fonts/main-logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/img/logo/fonts/main-logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/logo/fonts/main-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/logo/fonts/main-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/fonts/main-logo.png">
+    <link rel="shortcut icon" href="/img/logo/fonts/main-logo.png" type="image/png">
 
     <!-- Google Fonts -->
 
@@ -67,22 +74,15 @@
                             &#9776;
                         </span>
                         <!-- logo -->
-                        <a class="navbar-brand" href="/" style="display: flex; align-items: center; padding: 10px 15px;">
-    <svg viewBox="0 0 250 120" style="height: 45px; width: auto; margin-right: 15px;">
-        <path d="M 40,50 Q 80,10 150,20" fill="none" stroke="#d07447" stroke-width="8" stroke-linecap="round"/>
-        <path d="M 148,20 Q 220,30 240,90" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-        <text x="50" y="100" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="70" fill="currentColor">S</text>
-        <rect x="110" y="55" width="12" height="45" rx="2" fill="currentColor" />
-        <circle cx="116" cy="38" r="8" fill="#4caf50" />
-        <rect x="145" y="55" width="12" height="45" rx="2" fill="currentColor" />
-        <circle cx="151" cy="38" r="8" fill="#4caf50" />
-        <text x="175" y="100" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="70" fill="#d07447">d</text>
-    </svg>
-    <div class="hidden-xs hidden-sm" style="line-height: 1.1; margin-top: 5px; color: currentColor;">
-        <span style="font-weight: 700; font-size: 18px; letter-spacing: 0.5px;">Sirahi Infrastructure</span><br>
-        <span style="font-weight: 400; font-size: 13px; opacity: 0.85;">&amp; Interior Design.</span>
-    </div>
-</a>
+                        <a class="navbar-brand" href="/">
+                            <span class="brand-wrap">
+                                <img class="brand-logo" src="<%= data.general.logo %>" alt="<%= data.general.companyName %>" />
+                                <span class="brand-text hidden-xs hidden-sm">
+                                <span style="font-weight: 700; font-size: 18px; letter-spacing: 0.2px;">Sirahi Infrastructure</span><br>
+                                <span style="font-weight: 400; font-size: 13px; opacity: 0.9;">&amp; Interior Design.</span>
+                                </span>
+                            </span>
+                        </a>
                     </div>
 
                     <!-- main menu -->

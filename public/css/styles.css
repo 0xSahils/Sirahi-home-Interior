@@ -18,8 +18,7 @@ Html, Body
 
 .small-text {display: none;}
 
-html {
-}
+/* html kept for future base styles */
 body {
     width: 100%;
     overflow-x: hidden;
@@ -718,15 +717,46 @@ Naviation Bar
 ====================================================*/
 
 .navbar {
-    padding: 35px 0px 20px 0px;
+    padding: 10px 0 0;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .site-nav-wrapper {
-    padding: 0 85px;   
+    padding: 0 35px;
 }
 
 .navbar-brand {
-    padding: 13px 15px;
+    padding: 0;
+}
+
+/* Brand (logo + text) alignment */
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+}
+
+.navbar-brand .brand-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    height: 80px;
+}
+
+.navbar-brand .brand-logo {
+    height: 62px;
+    width: auto;
+    display: block;
+}
+
+.navbar-brand .brand-text {
+    display: inline-block;
+    line-height: 1.1;
+    color: #2aa9ff;
+    margin-top: 6px;
 }
 
 ul.navbar-nav > li > a {
@@ -736,6 +766,8 @@ ul.navbar-nav > li > a {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;    
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 ul.navbar-nav > li > a:hover,
