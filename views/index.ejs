@@ -94,7 +94,9 @@
                                 <li><a class="smooth-scroll" href="#about">About</a></li>
                                 <li><a class="smooth-scroll" href="#services">Services</a></li>
                                 <li><a class="smooth-scroll" href="#work-portfolio">Work</a></li>
+                                <% if (!data.team || data.team.visible !== false) { %>
                                 <li><a class="smooth-scroll" href="#team">Team</a></li>
+                                <% } %>
                                 <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -113,7 +115,9 @@
                             <li><a class="smooth-scroll" href="#about">About</a></li>
                             <li><a class="smooth-scroll" href="#services">Services</a></li>
                             <li><a class="smooth-scroll" href="#work-portfolio">Work</a></li>
+                            <% if (!data.team || data.team.visible !== false) { %>
                             <li><a class="smooth-scroll" href="#team">Team</a></li>
+                            <% } %>
                             <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -392,6 +396,7 @@
     </section>
     <!--portfiolio end-->
 
+    <% if (!data.team || data.team.visible !== false) { %>
     <!--TEAM-->
     <section id="team">
         <div class="content-box-">
@@ -424,6 +429,7 @@
         </div>
     </section>
     <!--team end-->
+    <% } %>
 
     <!--STATS-->
     <section id="stats">

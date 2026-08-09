@@ -60,17 +60,19 @@ $(function () {
 Team Members:
 ====================================================*/
 $(function () {
-    $("#team-slider").owlCarousel({
-        items: 1,
-        /*how many items are displayed at a time*/
-        autoplay: false,
-        smartSpeed: 700,
-        loop: true,
-        autoplayHoverPause: true,
-        nav: true,
-        dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-    });
+    if ($("#team-slider").length) {
+        $("#team-slider").owlCarousel({
+            items: 1,
+            /*how many items are displayed at a time*/
+            autoplay: false,
+            smartSpeed: 700,
+            loop: true,
+            autoplayHoverPause: true,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        });
+    }
 });
 
 /* ==================================================

@@ -176,12 +176,6 @@
         "category": "kitchen"
       },
       {
-        "image": "/img/work/work-img-20.jpeg",
-        "title": "Bright Marble Kitchen ",
-        "desc": "Expansive warm finishes paired cleanly with matte surfaces.",
-        "category": "kitchen"
-      },
-      {
         "image": "/img/work/work-img-23.jpeg",
         "title": "Bespoke Wardrobe Solution ",
         "desc": "Minimalist layout fused with sharp Indian interior themes.",
@@ -316,6 +310,7 @@
     ]
   },
   "team": {
+    "visible": false,
     "heading": "Our Designers",
     "members": [
       {
